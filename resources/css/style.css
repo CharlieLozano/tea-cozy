@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background-color: black;
+    color: seashell;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;  
+    
+}
+
+body > *{
+    opacity: 9;
+}
+
+nav {
+    height: 69px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    opacity: 1;
+    z-index: 1;
+}
+
+nav > *{
+    opacity: 0.9;
+}
+
+
+
+header{
+    background-image: url('../img-mission-background.webp');
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+    
+.logo{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.title-our-mission{
+    width: 100%;
+    background-color: black;
+}
+
+.tea-month{
+    display: flex;
+    justify-content: center;
+}
+
+.tea-month-container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.title-tea-month{
+    width: 100%;
+}
+
+.month-item{
+    box-sizing: content-box;
+    width: 300px;
+    margin: 15px;
+
+}
+
+.month-item img{
+    width: auto;
+    height: 200px;
+}
+
+.month-item h4{
+    margin: 10px;
+}
+
+.locations {
+    height: 500px;
+    background-image: url('../img-locations-background.webp');
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+
+.title-locations{
+    width: 100%;
+}
+
+.location-card{
+    background-color: black;
+    width: 300px;
+    margin: 15px;
+}
+
+.contact{
+    height: 200px;
+}
+
+footer{
+    padding-left: 20px;
+    text-align: left;
+}
+
+@media only screen and (min-width: 1500px){
+    body{
+        width: 1500px;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 1050px){    
+    .locations{
+        height: auto;
+        background-color: rgba(0,0,0, 0.5);
+    }    
+    
+    .locations h2{
+        width: auto;
+        background-color: black;
+    }
+    
+    .title-our-mission{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+    nav{
+        height: 49px;
+    }
+    
+    .logo img{
+        height: 30px;
+        width: auto;
+    }
+
+    .menu ul li{
+        font-size: 18px;
+    }
+    
+    .menu{
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+}
